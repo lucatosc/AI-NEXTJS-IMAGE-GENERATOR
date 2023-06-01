@@ -17,13 +17,13 @@ export default function NavBar() {
     >
       <Container>
         <Navbar.Brand as={Link} href='/'>
-          Image Gallery
+          Home Page
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='main-navbar' />
         <Navbar.Collapse id='main-navbar'>
           <Nav>
-            <Nav.Link as={Link} href='/static' active={pathname === '/static'}>
-              Static
+            <Nav.Link as={Link} href='/about' active={pathname === '/about'}>
+              About
             </Nav.Link>
             <Nav.Link
               as={Link}
@@ -32,10 +32,20 @@ export default function NavBar() {
             >
               Dynamic
             </Nav.Link>
-            <Nav.Link as={Link} href='/isr' active={pathname === '/isr'}>
-              ISR
+            <Nav.Link
+              as={Link}
+              href='/privacy'
+              active={pathname === '/privacy'}
+            >
+              Privacy
             </Nav.Link>
-
+            <Nav.Link
+              as={Link}
+              href='/contact'
+              active={pathname === '/contact'}
+            >
+              Contact
+            </Nav.Link>
             <NavDropdown title='Topics' id='topic-dropdown'>
               <NavDropdown.Item as={Link} href='/topics/health'>
                 Health
@@ -47,9 +57,6 @@ export default function NavBar() {
                 Coding
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} href='/search' active={pathname === '/search'}>
-              Search
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

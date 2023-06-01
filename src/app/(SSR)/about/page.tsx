@@ -20,6 +20,7 @@ export default async function Page() {
     <div>
       <Alert>
         This page fetches and caches data from <strong>Unsplash</strong>
+        only 50 images per hour are allowed.
       </Alert>
       <div className='d-flex flex-colum align-items-center'>
         <Image

@@ -1,10 +1,9 @@
-import Image from 'next/image';
-import styles from './page.module.css';
+import SearchPage from '../components/search/SearchPage';
 
-export default function Home() {
-  return (
-    <div>
-      <h1>Home page</h1>
-    </div>
-  );
+export const metadata = {
+  title: 'Search - NextJS 13.4 Image Gallery',
+};
+
+export default function Page() {
+  return <SearchPage />;
 }
